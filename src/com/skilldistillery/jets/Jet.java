@@ -64,26 +64,32 @@ public abstract class Jet implements FlightOps {
 			this.hasFuel = true;			
 		}
 		else {
-			System.out.println("plane already fueled up");
+			System.out.println("jet already fueled up");
 		}
 	}
 
 	public void fly() {
-		if(this.isAirborne == false) {
+		if(this.isAirborne == false && this.hasFuel == true) {
 			this.isAirborne = true;
-			System.out.println("plane will fly for " + (((double)this.range)/this.speed) + "hours max");
+			System.out.print("jet will fly for ");
+			System.out.printf("%.2f", (double)(this.range)/this.speed);
+			System.out.println(" hours at max speed");
+		}
+		else if(this.isAirborne == false && this.hasFuel == false) {
+			System.out.println("jet requires fuel");
 		}
 		else {
-			System.out.println("plane already airborne");
+			System.out.println("jet already airborne");
 		}
 	}
 	
 	public void land() {
 		if(this.isAirborne == true) {
 			this.isAirborne = false;
+			this.hasFuel = false;
 		}
 		else {
-			System.out.println("plane already on the ground");
+			System.out.println("jet already on the ground");
 		}
 	}
 
@@ -131,8 +137,8 @@ public abstract class Jet implements FlightOps {
 
 	@Override
 	public String toString() {
-		return this.getClass() + " model=" + model + ", speed=" + speed + ", range=" + range + ", price=" + price + ", hasFuel="
-				+ hasFuel + ", isAirborne=" + isAirborne;
+		return this.getClass().getSimpleName() + ": " + model + ", max speed=" + speed + ", max range=" + range + ", price=" + price + ", fueled="
+				+ hasFuel + ", airborne=" + isAirborne;
 	}
 	
 	

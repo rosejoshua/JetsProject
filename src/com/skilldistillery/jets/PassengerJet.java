@@ -18,10 +18,10 @@ public class PassengerJet extends Jet implements FlightOps, PassengerOps {
 			this.hasPassengers = false;
 		}
 		else if(this.hasPassengers == true && this.isAirborne()==true) {
-			System.out.println("plane is airborne, cannot unload passengers");
+			System.out.println("jet is airborne, cannot unload passengers");
 		}
 		else {
-			System.out.println("plane already does not contain passengers");
+			System.out.println("jet already does not contain passengers");
 		}
 		
 	}
