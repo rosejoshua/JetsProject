@@ -1,0 +1,8 @@
+cargo, McDonnell Douglas MD-11F, 587.0 , 7130, 95_999_000L
+passenger, Airbus A320, 511.0, 3350, 101_000_000L
+fighter, Mikoyan MiG-35, 1305.0, 1242, 31_950_000L
+cargo, Boeing 757-200PF, 610.0, 3150, 100_999_999L
+passenger, Boeing 737, 521.0, 3215, 102_200_000L
+fighter, Chengdu J-20, 1305.0, 740, 33_500_000L
+fighter, Lockheed Martin F-35, 1277.8, 1250, 122_000_000L
+passenger, Boeing 747, 614.0, 6100, 227_000_000L
