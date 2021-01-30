@@ -71,6 +71,7 @@ public abstract class Jet implements FlightOps {
 	public void fly() {
 		if(this.isAirborne == false) {
 			this.isAirborne = true;
+			System.out.println("plane will fly for " + (((double)this.range)/this.speed) + "hours max");
 		}
 		else {
 			System.out.println("plane already airborne");

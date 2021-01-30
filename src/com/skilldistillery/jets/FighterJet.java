@@ -9,6 +9,11 @@ public class FighterJet extends Jet implements CombatOps {
 	public void eject() {
 		// TODO Auto-generated method stub
 	}
+	
+
+	public FighterJet(String model, double speed, int range, long price) {
+		super(model, speed, range, price);
+	}
 
 	@Override
 	public int hashCode() {
