@@ -21,4 +21,4 @@ Download all appropriate class files, compile java application and run JetsAppli
 
 ### Lessons Learned
 
-My main challenge with this project was properly using encapsulation to manipulate the jet objects properly. I had placed too many method calls in my main app which had to be completely stripped down and the functionality rebuilt in the airfiled object.
+My main challenge with this project was properly using encapsulation to manipulate the jet objects properly. I had placed too many method calls in my main app which had to be completely stripped down and the functionality rebuilt in the airfield object.
