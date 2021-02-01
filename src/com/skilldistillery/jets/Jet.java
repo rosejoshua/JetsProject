@@ -64,22 +64,22 @@ public abstract class Jet implements FlightOps {
 			this.hasFuel = true;			
 		}
 		else {
-			System.out.println("jet already fueled up");
+			System.out.println(this.getModel() + " already fueled up");
 		}
 	}
 
 	public void fly() {
 		if(this.isAirborne == false && this.hasFuel == true) {
 			this.isAirborne = true;
-			System.out.print("jet will fly for ");
+			System.out.print(this.getModel() + " will fly for ");
 			System.out.printf("%.2f", (double)(this.range)/this.speed);
 			System.out.println(" hours at max speed");
 		}
 		else if(this.isAirborne == false && this.hasFuel == false) {
-			System.out.println("jet requires fuel");
+			System.out.println(this.getModel() + " requires fuel");
 		}
 		else {
-			System.out.println("jet already airborne");
+			System.out.println(this.getModel() + " already airborne");
 		}
 	}
 	
@@ -89,7 +89,7 @@ public abstract class Jet implements FlightOps {
 			this.hasFuel = false;
 		}
 		else {
-			System.out.println("jet already on the ground");
+			System.out.println(this.getModel() + " already on the ground");
 		}
 	}
 

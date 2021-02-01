@@ -117,7 +117,7 @@ public class Airfield {
 			}
 			for (Jet jet2 : getJets()) {
 				if (jet2 instanceof FighterJet){
-					System.out.println(jet2);
+					System.out.println(jet2.getModel());
 				}
 			}
 				System.out.println("are all dogfighting now!");

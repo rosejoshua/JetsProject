@@ -9,7 +9,7 @@ public class PassengerJet extends Jet implements FlightOps, PassengerOps {
 			this.hasPassengers = true;
 		}
 		else {
-			System.out.println("passengers already onboard");
+			System.out.println(this.getModel() + " passengers already onboard");
 		}
 	}
 
@@ -18,10 +18,10 @@ public class PassengerJet extends Jet implements FlightOps, PassengerOps {
 			this.hasPassengers = false;
 		}
 		else if(this.hasPassengers == true && this.isAirborne()==true) {
-			System.out.println("jet is airborne, cannot unload passengers");
+			System.out.println(this.getModel() + " is airborne, cannot unload passengers");
 		}
 		else {
-			System.out.println("jet already does not contain passengers");
+			System.out.println(this.getModel() + " already does not contain passengers");
 		}
 		
 	}

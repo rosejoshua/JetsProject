@@ -13,7 +13,7 @@ public class CargoJet extends Jet implements FlightOps, CargoOps {
 			System.out.println("jet is airborne, cannot load");;
 		}
 		else {
-			System.out.println("cargo already loaded");
+			System.out.println(this.getModel() + " cargo already loaded");
 		}
 	}
 
@@ -22,7 +22,7 @@ public class CargoJet extends Jet implements FlightOps, CargoOps {
 			this.cargoLoaded = false;
 		}
 		else {
-			System.out.println("jet already empty");
+			System.out.println(this.getModel() + " already empty");
 		}		
 	}
 
